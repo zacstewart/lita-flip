@@ -69,6 +69,8 @@ module Lita
           '┻━┻'
         when ':poop:'
           ':icecream:'
+        when ':icecream:'
+          ':poop:'
         else
           word.chars.map { |char| FLIP_HASH[char] }.join.reverse
         end
