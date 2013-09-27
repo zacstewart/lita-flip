@@ -1,10 +1,10 @@
 Gem::Specification.new do |spec|
   spec.name          = "lita-flip"
-  spec.version       = "0.0.1"
+  spec.version       = "0.0.2"
   spec.authors       = ["Zac Stewart"]
   spec.email         = ["zgstewart@gmail.com"]
-  spec.description   = %q{A handler for [Lita][1] that angrily flips your text.}
-  spec.summary       = %q{A handler for [Lita][1] that angrily flips your text.}
+  spec.description   = %q{A handler for Lita that angrily flips your text.}
+  spec.summary       = %q{A handler for Lita that angrily flips your text.}
   spec.homepage      = "https://github.com/zacstewart/lita-flip"
   spec.license       = "MIT"
 
