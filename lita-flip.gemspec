@@ -3,9 +3,9 @@ Gem::Specification.new do |spec|
   spec.version       = "0.0.1"
   spec.authors       = ["Zac Stewart"]
   spec.email         = ["zgstewart@gmail.com"]
-  spec.description   = %q{TODO: Add a description}
-  spec.summary       = %q{TODO: Add a summary}
-  spec.homepage      = "TODO: Add a homepage"
+  spec.description   = %q{A handler for [Lita][1] that angrily flips your text.}
+  spec.summary       = %q{A handler for [Lita][1] that angrily flips your text.}
+  spec.homepage      = "https://github.com/zacstewart/lita-flip"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_runtime_dependency "lita", "~> 2.4"
+  spec.add_runtime_dependency "lita"
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
