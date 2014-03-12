@@ -1,5 +1,7 @@
 # lita-flip
 
+[![Build Status](https://travis-ci.org/zacstewart/lita-flip.png?branch=master)](https://travis-ci.org/zacstewart/lita-flip)
+
 A handler for [Lita][1] that angrily flips your text.
 
 ## Installation
