@@ -6,7 +6,7 @@ describe Lita::Handlers::Flip, lita_handler: true do
 
   it 'flips the words' do
     send_command('flip me Nerdbot ftw')
-    expect(replies.last).to eq('(╯°□°）╯︵ʍʇɟ ʇoqpɹǝu')
+    expect(replies.last).to eq('(╯°□°）╯︵ ʍʇɟ ʇoqpɹǝu')
   end
 
 end

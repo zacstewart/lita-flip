@@ -3,7 +3,7 @@ require "lita"
 module Lita
   module Handlers
     class Flip < Handler
-      FLIPPER = '(╯°□°）╯︵'.freeze
+      FLIPPER = '(╯°□°）╯︵ '.freeze
       FLIP_HASH = {
         '!' => '¡',
         '?' => '¿',

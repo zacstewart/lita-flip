@@ -15,7 +15,7 @@ gem "lita-flip"
 ## Usage
 
 Lita: flip mondays
-> (╯°□°）╯︵sʎɐpuoɯ
+> (╯°□°）╯︵ sʎɐpuoɯ
 
 ## License
 
