@@ -19,4 +19,11 @@ describe Lita::Handlers::Flip, lita_handler: true do
     end
   end
 
+  context 'words that get fliped specially' do
+    it 'flips the whole word' do
+      send_command('flip table')
+      expect(replies.last).to eq('(╯°□°）╯︵ ┻━┻')
+    end
+  end
+
 end

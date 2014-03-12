@@ -4,7 +4,7 @@ module Lita
   module Handlers
     class Flip < Handler
       FLIPPER = '(╯°□°）╯︵ '.freeze
-      FLIP_HASH = {
+      FLIPPED_CHARACTERS = {
         '!' => '¡',
         '?' => '¿',
         '6' => '9',
@@ -47,6 +47,12 @@ module Lita
         '\'' => ',',
       }
 
+      FLIPPED_WORDS = {
+        'table'      => '┻━┻',
+        ':poop:'     => ':icecream:',
+        ':icecream:' => ':poop:'
+      }
+
       route %r{\Aflip(?:\s+me)?\s+(.*)\Z}, :flip,
         command: true,
         help: {
@@ -68,15 +74,8 @@ module Lita
       end
 
       def flip_word(word)
-        case word
-        when 'table'
-          '┻━┻'
-        when ':poop:'
-          ':icecream:'
-        when ':icecream:'
-          ':poop:'
-        else
-          word.chars.map { |char| FLIP_HASH[char] }.join.reverse
+        FLIPPED_WORDS.fetch(word) do |w|
+          w.chars.map { |char| FLIPPED_CHARACTERS[char] }.join.reverse
         end
       end
     end
