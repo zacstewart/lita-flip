@@ -47,7 +47,7 @@ module Lita
         '\'' => ',',
       }
 
-      route %r{\Aflip(?:\s+me)\s+(.*)\Z}, :flip, command: true
+      route %r{\Aflip(?:\s+me)?\s+(.*)\Z}, :flip, command: true
 
       def flip(response)
         sentence = response.matches.first.first.downcase
