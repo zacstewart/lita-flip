@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "lita-flip"
-  spec.version       = "1.0.1"
+  spec.version       = "1.0.2"
   spec.authors       = ["Zac Stewart"]
   spec.email         = ["zgstewart@gmail.com"]
   spec.description   = %q{A handler for Lita that angrily flips your text.}
