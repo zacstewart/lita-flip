@@ -26,4 +26,10 @@ describe Lita::Handlers::Flip, lita_handler: true do
     end
   end
 
+  context 'words that are flipped' do
+    it 'unflips flipped letters' do
+      send_command('flip ǝǝɟɟoɔ')
+      expect(replies.last).to eq('(╯°□°）╯︵ coffee')
+    end
+  end
 end

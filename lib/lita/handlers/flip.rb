@@ -75,8 +75,12 @@ module Lita
 
       def flip_word(word)
         FLIPPED_WORDS.fetch(word) do |w|
-          w.chars.map { |char| FLIPPED_CHARACTERS[char] }.join.reverse
+          w.chars.map { |char| flip_char(char) }.join.reverse
         end
+      end
+
+      def flip_char(char)
+        FLIPPED_CHARACTERS.fetch(char) { FLIPPED_CHARACTERS.key(char) }
       end
     end
 
