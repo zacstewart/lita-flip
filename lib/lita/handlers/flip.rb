@@ -80,9 +80,7 @@ module Lita
       end
 
       def flip_char(char)
-        flipped_char = FLIPPED_CHARACTERS[char] unless flipped_char
-        return flipped_char unless flipped_char.nil?
-        FLIPPED_CHARACTERS.key(char)
+        FLIPPED_CHARACTERS.fetch(char) { FLIPPED_CHARACTERS.key(char) }
       end
     end
 
